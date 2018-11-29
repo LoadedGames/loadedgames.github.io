@@ -25,30 +25,107 @@ body {
 
 section {
   background-color: #0d0d0d;
+  padding: 50px 0;
 }
 
-.bg-black {
-  background-color: #bd3020;
+.content-container-on {
+  background-color: #ac3326;
+  width:100%;
+  padding: 1rem 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-container-on::before {
+  content: "";
+  background: url("/images/rough-edge-up-rust.png") repeat-x 50%;
+  display: block;
+  position: relative;
+  height: 8px;
+  width: 100%;
+  top: -1.5rem;
+  left:0;
+  right:0;
+}
+
+.content-container-on::after {
+  content: "";
+  background: url("/images/rough-edge-down-rust.png") repeat-x 50%;
+  display: block;
+  position: relative;
+  height: 8px;
+  width: 100%;
+  bottom: -1.5rem;
+  left:0;
+  right:0;
+}
+
+.content-container-off {
+  background-color: #0d0d0d;
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+#mainNav::after{
+  content: "";
+  background: url("/images/rough-edge-down-rust.png") repeat-x 50%;
+  display: block;
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  bottom: -0.5rem;
+  left:0;
+  right:0;
+}
+
+#footer::before {
+  content: "";
+  background: url("/images/rough-edge-up-rust.png") repeat-x 50%;
+  display: block;
+  position: relative;
+  height: 8px;
+  width: 100%;
+  top: -1rem;
+  left:0;
+  right:0;
+}
+
+.highlight-bg {
+  background-color: #ac3326;
 }
 
 .link {
-  background-color: #d9d9d9;
   color: #d9d9d9;
 }
 
 .link:hover {
   text-decoration: none;
-  background-color: #bd3020;
-  color: #bd3020;
+  color: #d9d9d9;
+  font-weight: bold;
 }
 
-.link:hover span {
+#large-link {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #d9d9d9;
+}
+
+.nav-link:hover {
+  color: #d9d9d9;
   font-weight: bold;
 }
 
 hr {
-  color: #bd3020;
-  background-color: #bd3020;
+  color: #ac3326;
+  background-color: #ac3326;
   border: none;
   height: 0.5rem;
   margin-top: 0.5rem;
