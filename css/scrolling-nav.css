@@ -19,14 +19,55 @@ section {
 }
 
 body {
-  background-color: #373737;
+  background-color: #0d0d0d;
   color: #d9d9d9;
 }
 
 section {
-  background-color: #373737;
+  background-color: #0d0d0d;
 }
 
 .bg-black {
-  background-color: #000000;
+  background-color: #bd3020;
+}
+
+.link {
+  background-color: #d9d9d9;
+  color: #d9d9d9;
+}
+
+.link:hover {
+  text-decoration: none;
+  background-color: #bd3020;
+  color: #bd3020;
+}
+
+.link:hover span {
+  font-weight: bold;
+}
+
+hr {
+  color: #bd3020;
+  background-color: #bd3020;
+  border: none;
+  height: 0.5rem;
+  margin-top: 0.5rem;
+  width: 105%;
+  text-align: center;
+  margin-left: -1.5%;
+}
+
+hr.thin {
+  height: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#other-game-title {
+  margin-top: 0.5rem;
+}
+
+.extended-content {
+  width: 105%;
+  text-align: center;
+  margin-left: -1.5%;
 }
