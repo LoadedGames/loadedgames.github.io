@@ -5,13 +5,13 @@
  */
 
 header {
-  padding: 300px 0 100px;
+  padding: 150px 0 100px;
   box-sizing: border-box;
 }
 
 @media (min-width: 992px) {
   header {
-    padding: 300px 0 100px;
+    padding: 150px 0 100px;
   }
 }
 
@@ -22,7 +22,7 @@ html {
 
 body {
   background-color: #111211;
-  color: #d9d9d9;
+  color: #ffffff;
   width:100%;
 }
 
@@ -36,9 +36,13 @@ h1 {
   padding-top: 4rem;
 }
 
+p {
+  font-size: 1rem;
+}
+
 .tagline {
   position: absolute;
-  top: 850px;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -95,7 +99,9 @@ h1 {
 .team-member-container {
   position: relative;
   margin-bottom: 1.5rem;
-  
+  max-width: 33%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 footer {
@@ -143,6 +149,10 @@ footer {
 
 #large-link {
   font-size: 1.5rem;
+}
+
+.nav-item {
+  width: 100%;
 }
 
 .nav-link {
