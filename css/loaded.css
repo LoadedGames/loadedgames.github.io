@@ -4,14 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-header {
-  padding: 150px 0 100px;
-  box-sizing: border-box;
-}
-
 @media (min-width: 992px) {
-  header {
-    padding: 150px 0 100px;
+  #FeaturedGame {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -22,13 +19,11 @@ html {
 
 body {
   background-color: #111211;
-  color: #ffffff;
+  color: #EEEDEE;
   width:100%;
 }
 
 section {
-  background-color: #111211;
-  padding: 50px 0;
   box-sizing: border-box;
 }
 
@@ -40,38 +35,24 @@ p {
   font-size: 1rem;
 }
 
-.tagline {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+a {
+  color: #5bbbff;
 }
 
-.content-container-on {
-  background-color: #ac3326;
+.content {
+  padding: 1rem;
+}
+
+.content-container {
   width:100%;
   padding: 3rem 0;
   margin-right: auto;
   margin-left: auto;
-  left: 0;
-  right: 0;
 }
 
-.content-container-on::before {
+.content-container::after {
   content: "";
-  background: url("/images/rough-edge-up-rust.png") repeat-x 50%;
-  display: block;
-  position: relative;
-  height: 0.5rem;
-  width: 100%;
-  top: -3.5rem;
-  left:0;
-  right:0;
-}
-
-.content-container-on::after {
-  content: "";
-  background: url("/images/rough-edge-down-rust.png") repeat-x 50%;
+  background: url('../images/rough-edge-down.png') repeat-x;
   display: block;
   position: relative;
   height: 0.5rem;
@@ -79,13 +60,6 @@ p {
   bottom: -3.5rem;
   left:0;
   right:0;
-}
-
-.content-container-off {
-  background-color: #111211;
-  width:100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .other-game-container {
@@ -104,14 +78,63 @@ p {
   padding-right: 1rem;
 }
 
+#main {
+  background-color: #111211;
+}
+
+#mainimg {
+  background: url('../images/LoadedGamesBanner.png') no-repeat;
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: 40rem;
+  position: relative;
+  left: 50%;
+  top: 9rem;
+  transform: translate(-50%, 0);
+}
+
+#tagline {
+  position: absolute;
+  top: 35rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#FeaturedGame {
+  background-color: #10415d;
+}
+
+#MissionStatement {
+  background-color: #EEEDEE;
+  color: #111211;
+}
+
+#TheTeam {
+  background-color: #48245c;
+}
+
+#ourgames {
+  background-color: #EEEDEE;
+  color: #111211;
+}
+
+#contact {
+  background-color: #105342;
+}
+
+#footer {
+  background-color: #ac3326;
+}
+
 footer {
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
 
 #mainNav::after{
   content: "";
-  background: url("/images/rough-edge-down-rust.png") repeat-x 50%;
+  background: url('../images/rough-edge-down.png') repeat-x;
   display: block;
   position: absolute;
   height: 0.5rem;
@@ -121,29 +144,17 @@ footer {
   right:0;
 }
 
-#footer::before {
-  content: "";
-  background: url("/images/rough-edge-up-rust.png") repeat-x 50%;
-  display: block;
-  position: relative;
-  height: 0.5rem;
-  width: 100%;
-  top: -1rem;
-  left:0;
-  right:0;
-}
-
 .highlight-bg {
   background-color: #ac3326;
 }
 
 .link {
-  color: #d9d9d9;
+  color: #EEEDEE;
 }
 
 .link:hover {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #EEEDEE;
   font-weight: bold;
 }
 
@@ -151,16 +162,35 @@ footer {
   font-size: 1.5rem;
 }
 
-.nav-item {
-  width: 100%;
+.navbar {
+  padding: 0.5rem 1rem 0;
+}
+
+#navbar {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webskit-justify-content: space-between;
 }
 
 .nav-link {
-  color: #d9d9d9;
+  color: #EEEDEE;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.nav-link::after {
+  display: block;
+  content: attr(text);
+  font-weight: bold;
+  height: 1px;
+  overflow: hidden;
+  color: transparent;
+  visibility: hidden;
 }
 
 .nav-link:hover {
-  color: #d9d9d9;
+  color: #EEEDEE;
   font-weight: bold;
 }
 
@@ -173,7 +203,6 @@ hr {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  margin-left: -1.5%;
 }
 
 hr.thin {
@@ -186,6 +215,6 @@ hr.thin {
 }
 
 .navbar-img {
-  width: 25%;
+  width: 4rem;
   height:auto;
 }
