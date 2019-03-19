@@ -134,7 +134,7 @@ footer {
 
 #mainNav::after{
   content: "";
-  background: url('../images/rough-edge-down.png') repeat-x;
+  background: url('../images/rough-edge-down-rust.png') repeat-x;
   display: block;
   position: absolute;
   height: 0.5rem;
