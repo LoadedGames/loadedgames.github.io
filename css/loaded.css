@@ -28,7 +28,11 @@ section {
 }
 
 h1 {
-  padding-top: 4rem;
+  margin-top: 4rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
 }
 
 p {
@@ -36,7 +40,8 @@ p {
 }
 
 a {
-  color: #5bbbff;
+  color: #ac3326;
+  font-weight: bold;
 }
 
 .content {
@@ -52,10 +57,10 @@ a {
 
 .content-container::after {
   content: "";
-  background: url('../images/rough-edge-down.png') repeat-x;
+  background-repeat: repeat-x;
   display: block;
   position: relative;
-  height: 0.5rem;
+  height: 15px;
   width: 100%;
   bottom: -3.5rem;
   left:0;
@@ -79,7 +84,11 @@ a {
 }
 
 #main {
-  background-color: #111211;
+  background-color: #ac3326;
+}
+
+#main .content-container::after {
+  background-image: url('../images/rough-edge-down-rust.png');
 }
 
 #mainimg {
@@ -102,42 +111,59 @@ a {
 }
 
 #FeaturedGame {
-  background-color: #10415d;
+  background-color: #EEEDEE;
+  color: #111211;
+}
+
+#FeaturedGame .content-container::after {
+  background-image: url('../images/rough-edge-down-light.png');
 }
 
 #MissionStatement {
-  background-color: #EEEDEE;
-  color: #111211;
-}
-
-#TheTeam {
-  background-color: #48245c;
-}
-
-#ourgames {
-  background-color: #EEEDEE;
-  color: #111211;
-}
-
-#contact {
   background-color: #105342;
 }
 
-#footer {
-  background-color: #ac3326;
+#MissionStatement .content-container::after {
+  background-image: url('../images/rough-edge-down-green.png');
+}
+
+#TheTeam {
+  background-color: #EEEDEE;
+  color: #111211;
+}
+
+#TheTeam .content-container::after {
+  background-image: url('../images/rough-edge-down-light.png');
+}
+
+#ourgames {
+  background-color: #10415d;
+}
+
+#ourgames .content-container::after {
+  background-image: url('../images/rough-edge-down-blue.png');
+}
+
+#contact {
+  background-color: #EEEDEE;
+  color: #111211;
+}
+
+#contact .content-container::after {
+  background-image: url('../images/rough-edge-down-light.png');
 }
 
 footer {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 #mainNav::after{
   content: "";
-  background: url('../images/rough-edge-down-rust.png') repeat-x;
+  background: url('../images/rough-edge-down-dark.png') repeat-x;
   display: block;
   position: absolute;
-  height: 0.5rem;
+  height: 15px;
   width: 100%;
   bottom: -0.5rem;
   left:0;
@@ -145,7 +171,7 @@ footer {
 }
 
 .highlight-bg {
-  background-color: #ac3326;
+  background-color: #111211;
 }
 
 .link {
