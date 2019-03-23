@@ -6,16 +6,82 @@
 
 .bg-dark {
   background-color: #111211!important;
+  color: #EEEDEE!important;
+}
+
+.bg-light {
+  background-color: #EEEDEE!important;
+  color: #111211!important;
 }
 
 .bg-primary {
   background-color: #111211!important;
 }
 
+.text-white {
+  color: #EEEDEE!important;
+}
+
+.body {
+  background-color: #EEEDEE;
+}
+
+.menace-font {
+  font-family: 'Londrina Solid', sans-serif;
+}
+
 section {
   padding: 150px 0;
   display: block;
   position: relative;
+}
+
+.before-edge-dark::before {
+  content: "";
+  background: url('../images/rough-edge-up-dark.png') repeat-x;
+  display: block;
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  left: 0;
+  top: -15px;
+  z-index: 10;
+}
+
+.before-edge-light::before {
+  content: "";
+  background: url('../images/rough-edge-up-light.png') repeat-x;
+  display: block;
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  left: 0;
+  top: -15px;
+  z-index: 10;
+}
+
+.after-edge-dark::after {
+  content: "";
+  background: url('../images/rough-edge-down-dark.png') repeat-x;
+  display: block;
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  left: 0;
+  bottom: -15px;
+  z-index: 10;
+}
+
+.after-edge-light::after {
+  content: "";
+  background: url('../images/rough-edge-down-light.png') repeat-x;
+  display: block;
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  left: 0;
+  bottom: -15px;
+  z-index: 10;
 }
 
 /* Navbar */
@@ -29,7 +95,8 @@ section {
 }
 
 .navbar-nav {
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #mainNav::after {
@@ -39,7 +106,7 @@ section {
   position: absolute;
   height: 15px;
   width: 100%;
-  bottom: -0.5rem;
+  bottom: -15px;
   left: 0;
 }
 
@@ -74,3 +141,26 @@ main {
   margin-bottom: 10rem;
   z-index: 10;
 }
+
+/* /Main block */
+
+/* About */
+
+.about-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.about-block__content {
+  padding: 0 20px;
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.about-block__image {
+  padding: 0 20px;
+  width: 50%;
+}
+
+/* /About */
