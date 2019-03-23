@@ -4,161 +4,35 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-@media (min-width: 992px) {
-  #FeaturedGame {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
+.bg-dark {
+  background-color: #111211!important;
 }
 
-html {
-  width: 100%;
-  margin: 0;
-}
-
-body {
-  background-color: #111211;
-  color: #EEEDEE;
-  width:100%;
+.bg-primary {
+  background-color: #111211!important;
 }
 
 section {
-  box-sizing: border-box;
-}
-
-h1 {
-  margin-top: 4rem;
-}
-
-h2 {
-  margin-bottom: 2rem;
-}
-
-p {
-  font-size: 1rem;
-}
-
-a {
-  color: #ac3326;
-  font-weight: bold;
-}
-
-.content {
-  padding: 1rem;
-}
-
-.content-container {
-  width:100%;
-  padding: 3rem 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.content-container::after {
-  content: "";
-  background-repeat: repeat-x;
+  padding: 150px 0;
   display: block;
   position: relative;
-  height: 15px;
-  width: 100%;
-  bottom: -3.5rem;
-  left:0;
-  right:0;
 }
 
-.other-game-container {
-  position: relative;
-  margin-bottom: 1.5rem;
-  max-width: 50%;
-  padding-left: 2rem;
-  padding-right: 2rem;
+/* Navbar */
+
+#navbar-menace-logo {
+  max-width: 8rem;
 }
 
-.team-member-container {
-  position: relative;
-  margin-bottom: 1.5rem;
-  max-width: 33%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+#navbar-loaded-logo {
+  max-width: 8rem;
 }
 
-#main {
-  background-color: #ac3326;
+.navbar-nav {
+  padding-bottom: 1rem;
 }
 
-#main .content-container::after {
-  background-image: url('../images/rough-edge-down-rust.png');
-}
-
-#mainimg {
-  background: url('../images/LoadedGamesBanner.png') no-repeat;
-  display: block;
-  max-width: 800px;
-  width: 100%;
-  height: 40rem;
-  position: relative;
-  left: 50%;
-  top: 9rem;
-  transform: translate(-50%, 0);
-}
-
-#tagline {
-  position: absolute;
-  top: 35rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-#FeaturedGame {
-  background-color: #EEEDEE;
-  color: #111211;
-}
-
-#FeaturedGame .content-container::after {
-  background-image: url('../images/rough-edge-down-light.png');
-}
-
-#MissionStatement {
-  background-color: #105342;
-}
-
-#MissionStatement .content-container::after {
-  background-image: url('../images/rough-edge-down-green.png');
-}
-
-#TheTeam {
-  background-color: #EEEDEE;
-  color: #111211;
-}
-
-#TheTeam .content-container::after {
-  background-image: url('../images/rough-edge-down-light.png');
-}
-
-#ourgames {
-  background-color: #10415d;
-}
-
-#ourgames .content-container::after {
-  background-image: url('../images/rough-edge-down-blue.png');
-}
-
-#contact {
-  background-color: #EEEDEE;
-  color: #111211;
-}
-
-#contact .content-container::after {
-  background-image: url('../images/rough-edge-down-light.png');
-}
-
-footer {
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-}
-
-#mainNav::after{
+#mainNav::after {
   content: "";
   background: url('../images/rough-edge-down-dark.png') repeat-x;
   display: block;
@@ -166,81 +40,37 @@ footer {
   height: 15px;
   width: 100%;
   bottom: -0.5rem;
-  left:0;
-  right:0;
+  left: 0;
 }
 
-.highlight-bg {
-  background-color: #111211;
+/* /Navbar */
+
+main {
+  padding-top: 80px;
 }
 
-.link {
-  color: #EEEDEE;
-}
+/* Main block */
 
-.link:hover {
-  text-decoration: none;
-  color: #EEEDEE;
-  font-weight: bold;
-}
-
-#large-link {
-  font-size: 1.5rem;
-}
-
-.navbar {
-  padding: 0.5rem 1rem 0;
-}
-
-#navbar {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  -webskit-justify-content: space-between;
-}
-
-.nav-link {
-  color: #EEEDEE;
-  overflow: visible;
-  white-space: nowrap;
-}
-
-.nav-link::after {
-  display: block;
-  content: attr(text);
-  font-weight: bold;
-  height: 1px;
+.main-block{
   overflow: hidden;
-  color: transparent;
-  visibility: hidden;
+  padding: 0;
+  position: relative;
 }
 
-.nav-link:hover {
-  color: #EEEDEE;
-  font-weight: bold;
-}
-
-hr {
-  color: #ac3326;
-  background-color: #ac3326;
-  border: none;
-  height: 0.5rem;
+.main-block__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  height: 100%;
+  object-fit: cover;
+  font-family: "object-fit: cover";
+  z-index: -1;
 }
 
-hr.thin {
-  height: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-#other-game-title {
-  margin-top: 0.5rem;
-}
-
-.navbar-img {
-  width: 4rem;
-  height:auto;
+.main-block__content {
+  display: block;
+  margin-top: 50rem;
+  margin-bottom: 10rem;
+  z-index: 10;
 }
