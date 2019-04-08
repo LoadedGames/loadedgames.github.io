@@ -78,9 +78,12 @@
 
     <main>
       <section id="main-block" class="main-block text-white">
-        <img class="main-block__background-image mx-auto" src="images/MenaceBanner-1920w.png">
+        <img class="main-block__background-image mx-auto"
+          srcset="images/MenaceBanner-768w.png 768w, images/MenaceBanner-900w.png 900w, images/MenaceBanner-1920w.png 1920w"
+          sizes="(max-width: 768px) 768px, (max-width: 1920px) 900px, 1920px"
+          src="images/MenaceBanner-1920w.png">
         <div class="main-block__content container text-center mx-auto">
-          <h1 class="menace-font black-outline">Coming soon to a neighbourhood near you</h1>
+          <h1 class="menace-font black-outline">Coming soon to a neighbourhood near you...</h1>
         </div>
       </section>
 
@@ -135,7 +138,7 @@
       <!-- Footer -->
       <footer class="py-5 bg-dark">
         <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+          <p class="m-0 text-center text-white">Copyright &copy; Loaded Games Ltd. 2019</p>
         </div>
       </footer>
     </main>
