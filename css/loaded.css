@@ -115,7 +115,7 @@ h2 {
 }
 
 .block-title {
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
 }
 
 .block-container {
@@ -360,3 +360,33 @@ main {
 }
 
 /* /Features */
+
+/* Contact/Follow */
+
+.socialmedia-block {
+  margin-bottom: 2rem;
+}
+
+.socialmedia-image {
+  max-width: 100px;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.socialmedia-caption {
+  padding-top: 1rem;
+}
+
+@media (min-width: 420px)
+{
+  .socialmedia-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .socialmedia-caption {
+    padding-top: 0;
+  }
+}
+
+/* /Contact/Follow */
