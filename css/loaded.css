@@ -124,7 +124,7 @@ h2 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 /*
 @media (min-width: 576px) {
@@ -349,9 +349,20 @@ main {
 
 /* Features */
 
+.feature-container::before, .feature-container::after {
+  content: " ";
+  display: table;
+}
+
+.feature-container::after {
+  clear: both;
+}
+
 .feature-block {
   margin-bottom: 3.5rem;
   overflow: hidden;
+  float: left;
+  width: 100%;
 }
 
 .feature-block .image-border__image {
@@ -360,46 +371,24 @@ main {
 }
 
 .feature-block__content {
-  position: relative;
-  float: left;
-  width: 100%;
-  left: 0;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .feature-block__image-wrapper {
-  position: relative;
-  float: left;
-  width: 100%;
+
 }
 
-@media (min-width: 768px)
+@media (min-width: 50rem)
 {
   .feature-block {
-    display: flex;
-    align-items: center;
-  }
-
-  .feature-block__content {
-    padding: 0 20px;
-    max-width: 50%;
-    margin-bottom: 0;
-  }
-
-  .feature-block__image-wrapper {
-    padding: 0 20px;
-    max-width: 50%;
+    width: 50%;
   }
 }
 
-@media (min-width: 992px)
+@media (min-width: 65rem)
 {
-  .feature-block__content {
-    max-width: 33%;
-  }
-
-  .feature-block__image-wrapper {
-    max-width: 67%;
+  .feature-block {
+    width: 33.3%;
   }
 }
 
@@ -434,3 +423,93 @@ main {
 }
 
 /* /Contact/Follow */
+
+/* Loaded */
+
+.loaded-block {
+  overflow: hidden;
+}
+
+.loaded-block__content {
+  position: relative;
+  float: left;
+  width: 100%;
+  left: 0;
+}
+
+.loaded-block__image-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.loaded-block .image-border__image {
+  width: 100%;
+  padding: 2.7% 6.2% 0 2.9%;
+}
+
+@media (min-width: 768px) {
+  .loaded-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .loaded-block__content {
+    max-width: 50%;
+    padding: 0 20px;
+  }
+
+  .loaded-block__image-wrapper {
+    max-width: 50%;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .loaded-block__content {
+    max-width: 33%;
+  }
+
+  .loaded-block__image-wrapper {
+    max-width: 67%;
+  }
+}
+
+/* /Loaded */
+
+/* Team */
+
+.team-container::before, .team-container::after {
+  content: " ";
+  display: table;
+}
+
+.team-container::after {
+  clear: both;
+}
+
+.team-block {
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+.team-photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.team-block__content {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 50rem)
+{
+  .team-block {
+    width: 33.3%;
+  }
+}
+
+/* /Team */
