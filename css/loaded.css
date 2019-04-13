@@ -483,6 +483,11 @@ main {
 
 /* Team */
 
+.team-socialmedia {
+  text-align: center;
+  padding-bottom: 1rem
+}
+
 .team-container::before, .team-container::after {
   content: " ";
   display: table;
@@ -500,6 +505,7 @@ main {
 }
 
 .team-photo {
+  width: 75%;
   display: block;
   margin: 0 auto;
 }
@@ -509,10 +515,21 @@ main {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 30rem)
+{
+  .team-photo {
+    width: 50%;
+  }
+}
+
 @media (min-width: 50rem)
 {
   .team-block {
     width: 33.3%;
+  }
+
+  .team-photo {
+    width: 100%;
   }
 }
 
