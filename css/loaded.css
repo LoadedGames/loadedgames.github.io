@@ -426,6 +426,10 @@ main {
 
 /* Loaded */
 
+.tagline-image {
+  margin-bottom: 4rem;
+}
+
 .loaded-block {
   overflow: hidden;
 }
