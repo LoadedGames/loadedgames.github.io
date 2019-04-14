@@ -505,6 +505,7 @@ main {
 }
 
 .team-photo {
+  max-width: 250px;
   width: 75%;
   display: block;
   margin: 0 auto;
@@ -513,6 +514,9 @@ main {
 .team-block__content {
   width: 100%;
   margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 67%;
 }
 
 @media (min-width: 30rem)
@@ -530,6 +534,10 @@ main {
 
   .team-photo {
     width: 100%;
+  }
+
+  .team-block__content {
+    max-width: 90%;
   }
 }
 
