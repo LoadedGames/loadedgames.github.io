@@ -404,10 +404,11 @@ main {
   }
 }
 
-@media (min-width: 65rem)
+@media (min-width: 1060px)
 {
   .feature-block {
     width: 33.3%;
+    min-height: 27rem;
   }
 }
 
