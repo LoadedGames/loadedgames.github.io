@@ -56,6 +56,10 @@ h2 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 .before-edge-dark::before {
   content: "";
   background: url('../images/rough-edge-up-dark.png') repeat-x;
